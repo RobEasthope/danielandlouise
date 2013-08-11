@@ -1,0 +1,21 @@
+{
+  "name": "Louise_and_Daniel",
+  "version": "0.1.0",
+  "author": "Rob Easthope <robeasthope@gmail.com>",
+  "homepage": "http://www.danielandlouise.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robeasthope/danielandlouise.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-recess": "~0.3.4"
+  }
+}
