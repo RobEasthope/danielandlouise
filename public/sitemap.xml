@@ -5,11 +5,23 @@
         <lastmod>2013-08-11T20:11:52+01:00</lastmod>
     </url>
     <url>
+        <loc>http://yoursite.com/honeymoon/</loc>
+        <lastmod>2013-08-14T09:03:45+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://yoursite.com/</loc>
         <lastmod>2013-08-11T20:11:52+01:00</lastmod>
     </url>
     <url>
         <loc>http://yoursite.com/robots.txt</loc>
         <lastmod>2013-08-11T20:11:52+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/rsvp/</loc>
+        <lastmod>2013-08-14T09:07:51+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/thewedding/</loc>
+        <lastmod>2013-08-14T09:02:01+01:00</lastmod>
     </url>
 </urlset>
