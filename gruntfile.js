@@ -35,7 +35,6 @@ module.exports = function(grunt) {
             // Jquery
             '/_lib/bower_components/jquery/jquery.js',
             // Bootstrap
-
             // App
             'assets/js/app.js'
           ]
@@ -48,6 +47,7 @@ module.exports = function(grunt) {
           // Plugins
           '/_lib/bower_components/bootstrap/less/*.less',
           // App
+          '/assets/less/compile.less',
           '/assets/less/app.less'
         ],
         tasks: ['recess']
