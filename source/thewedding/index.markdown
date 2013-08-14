@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "index"
+title: "The Wedding"
 date: 2013-08-14 09:02
-comments: true
+comments: false
 sharing: true
 footer: true
 ---
