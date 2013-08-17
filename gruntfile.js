@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         },
         files: {
           'source/assets/css/app.min.css': [
-            '_less/less/compile.less'
+            '_src/less/compile.less'
           ]
         }
       }
