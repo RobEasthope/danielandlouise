@@ -19,8 +19,8 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'assets/app.min.css': [
-            'assets/less/compile.less'
+          'source/assets/css/app.min.css': [
+            '_less/less/compile.less'
           ]
         }
       }
@@ -31,9 +31,9 @@ module.exports = function(grunt) {
         report: 'min',
       },
         files: {
-          'assets/app.min.js': [
+          'source/assets/js/app.min.js': [
             // Jquery
-            '/_lib/bower_components/jquery/jquery.js',
+            '_src/bower_components/jquery/jquery.js',
             // Bootstrap
             // App
             'assets/js/app.js'
@@ -45,10 +45,11 @@ module.exports = function(grunt) {
       less: {
         files: [
           // Plugins
-          '/_lib/bower_components/bootstrap/less/*.less',
+          '_src/bower_components/bootstrap/less/*.less',
           // App
-          '/assets/less/compile.less',
-          '/assets/less/app.less'
+          '_src/less/app-variables.less',
+          '_src/less/compile.less',
+          '_src/less/app.less'
         ],
         tasks: ['recess']
       },
@@ -61,8 +62,8 @@ module.exports = function(grunt) {
     },
     clean: {
       dist: [
-        '/assets/main.min.css',
-        '/assets/app.min.js'
+        'source/assets/css/app.min.css',
+        'source/assets/js/app.min.js'
       ]
     }
   });
