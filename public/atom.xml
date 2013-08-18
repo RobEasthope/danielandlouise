@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2013-08-17T17:25:18+01:00</updated>
-  <id>http://yoursite.com/</id>
+  <title><![CDATA[Louise + Daniel are getting married]]></title>
+  <link href="http://www.danielandlouise.com//atom.xml" rel="self"/>
+  <link href="http://www.danielandlouise.com//"/>
+  <updated>2013-08-18T16:32:37+01:00</updated>
+  <id>http://www.danielandlouise.com//</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Rob Easthope]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

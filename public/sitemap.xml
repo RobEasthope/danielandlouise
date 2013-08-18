@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://yoursite.com/blog/archives/</loc>
+        <loc>http://www.danielandlouise.com//blog/archives/</loc>
         <lastmod>2013-08-17T17:21:58+01:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/honeymoon/</loc>
+        <loc>http://www.danielandlouise.com//honeymoon/</loc>
         <lastmod>2013-08-17T17:21:58+01:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/</loc>
+        <loc>http://www.danielandlouise.com//</loc>
         <lastmod>2013-08-17T17:21:58+01:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/robots.txt</loc>
+        <loc>http://www.danielandlouise.com//robots.txt</loc>
         <lastmod>2013-08-17T17:21:58+01:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/rsvp/</loc>
+        <loc>http://www.danielandlouise.com//rsvp/</loc>
         <lastmod>2013-08-17T17:21:58+01:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/thewedding/</loc>
+        <loc>http://www.danielandlouise.com//thewedding/</loc>
         <lastmod>2013-08-17T17:21:58+01:00</lastmod>
     </url>
 </urlset>
