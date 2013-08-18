@@ -5,3 +5,118 @@ grunt watch
 
 */
 
+//Structure
+
+.container {
+	display: table;
+	height: 100%;
+}
+
+.content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+// Page backgrounds
+.bkg {
+	margin-top: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.landing, .rsvp{
+	background-image: url('../img/bkg/landing/florence-landscape-IMAX.jpg');
+	background-position: center top;
+
+	@media only screen and (orientation: portrait) and (max-width: @screen-phone) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-phone) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-phone) and (-min-device-pixel-ratio : 1.5) {
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-phone) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-phone) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-phone) and (-min-device-pixel-ratio : 1.5) {
+	} 
+}
+
+.thewedding {
+	background-image: url('../img/bkg/thewedding/kingscote_tables-landscape-IMAX.jpg');
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.gifts {
+	background-image: url('../img/bkg/gifts/Ao_Nang_beach-landscape-IMAX.jpg');
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+// Nav
+.navbar-nav {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.nav >li {
+	float: none;
+	display: inline-block;
+}
+
+.nav-center {
+	float: none;
+	text-align: center;
+	> li {
+		float: none;
+		display: inline-block;
+		text-align: center;
+		> a {
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.landing-wrap {
+	width: 100%;
+	text-align: center;
+	display: table;
+
+	.landing-header {
+		display: table-row;
+		text-transform: uppercase;
+		width: 100%;
+
+		.names {
+			margin: 0;
+			font-weight: 700;
+			@media screen only and (max-width: @screen-phone) {
+
+			}
+			
+			@media screen only and (min-width: @screen-phone) and (max-width: @screen-tablet) {
+
+			}
+
+			@media screen only and (min-width: @screen-tablet) and (max-width: @screen-medium) {
+				font-size: 72px;
+			}
+
+			@media screen only and (min-width: @screen-medium) and (max-width: @screen-large) {
+				font-size: 72px;
+			}
+		}
+
+		.subhead {
+			margin: 0;
+			font-weight: 700;
+		}
+	}
+
+	.landing-footer {
+		display: table-cell;
+		vertical-align: bottom;
+		//position: absolute;
+		//bottom: 20px;
+		text-transform: uppercase;
+		//left: 0;
+	}
+}

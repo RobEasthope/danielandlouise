@@ -1,20 +1,19 @@
 ---
-layout: page
-title: "Honeymoon donations"
+layout: default
+title: "Gifts"
 date: 2013-08-14 09:03
 comments: false
 sharing: true
 footer: true
+css-tag: gifts
 ---
 
-<!-- 
+##~~Gift list~~ Honeymoon##
 
-There are no hard and fast rules for the content yet so feel free to reorder/request content as you see fit - Just add a comment and I'll pick it up in a few days. Email me if you want another page to play with.
+While it is traditional for couples to ask for crockery and tea towels and suchlike as wedding gifts, we have been living together for some time and have everything we need for a life of wedded bliss!
 
-P.S. The following is done from memory so I may have missed something.
+We are however planning to go on a three week honeymoon to Thailand after the wedding, and any contribution to this would be much appreciated by both of us. 
 
--->
+We have set up a website which allows you to pay money electronically to a paypal account that we can access. If you don’t like the idea of paying money electronically, there are cash and cheque options on the site as well. 
 
-<!-- Copy about honeymoon and not having a gifts list - with a link off to the donations site -->
-
-<!-- Can you add the link off to the donations site below? Thanks -->
+http://www.honeyfund.co.uk/wedding/danielandlouise

@@ -23,12 +23,15 @@
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
+@india-ink:				rgb(35, 39, 50);
+@saffron:				rgb(255, 70, 25);
+@pomegranate:			#c0392b;
 
 // Scaffolding
 // -------------------------
 
 @body-bg:               #fff;
-@text-color:            @gray-dark;
+@text-color:            white;
 
 // Links
 // -------------------------
@@ -39,7 +42,7 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "adelle-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -180,17 +183,17 @@
 
 // Basics of a navbar
 @navbar-height:                    50px;
-@navbar-color:                     #777;
-@navbar-bg:                        #eee;
+@navbar-color:                     @india-ink;
+@navbar-bg:                        white;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 // Navbar links
-@navbar-link-color:                #777;
-@navbar-link-hover-color:          #333;
+@navbar-link-color:                @india-ink;
+@navbar-link-hover-color:          @pomegranate;
 @navbar-link-hover-bg:             transparent;
-@navbar-link-active-color:         #555;
-@navbar-link-active-bg:            darken(@navbar-bg, 10%);
+@navbar-link-active-color:         @india-ink;
+@navbar-link-active-bg:            white;
 @navbar-link-disabled-color:       #ccc;
 @navbar-link-disabled-bg:          transparent;
 
@@ -551,10 +554,10 @@
 @container-tablet:          728px;
 
 // Medium screen / desktop
-@container-desktop:         940px;
+@container-desktop:         728px;
 
 // Large screen / wide desktop
-@container-large-desktop:   1170px;
+@container-large-desktop:   728px;
 
 
 // Grid system

@@ -8,8 +8,8 @@ module.exports = function(grunt) {
       },
       all: [
         'web/Gruntfile.js',
-        'web/assets/js/*.js',
-        '!web/assets/app.min.js'
+        '_src/assets/js/*.js',
+        'source/assets/js/app.min.js'
       ]
     },
     recess: {
@@ -25,6 +25,19 @@ module.exports = function(grunt) {
         }
       }
     },
+    concat: {
+        options: {
+            stripBanners: false
+        },
+        bootstrap: {
+            src: [
+            '_src/bower_components/jquery/jquery.js',
+            '_src/bower_components/bootstrap/js/dropdown.js',
+            '_src/js/app.js'
+            ],
+            dest: '_src/js/grunt-build.js'
+        }
+    },
     uglify: {
       dist: {
         options: {
@@ -32,11 +45,7 @@ module.exports = function(grunt) {
       },
         files: {
           'source/assets/js/app.min.js': [
-            // Jquery
-            '_src/bower_components/jquery/jquery.js',
-            // Bootstrap
-            // App
-            'assets/js/app.js'
+            '_src/js/grunt-build.js'
           ]
         }
       }
@@ -55,13 +64,14 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          '<%= jshint.all %>'
+          '_src/js/*.js'
         ],
-        tasks: ['jshint', 'uglify']
+        tasks: ['concat', 'uglify']
       }
     },
     clean: {
       dist: [
+        '_src/js/grunt-build.js',
         'source/assets/css/app.min.css',
         'source/assets/js/app.min.js'
       ]
@@ -71,6 +81,7 @@ module.exports = function(grunt) {
   // Load tasks
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-recess');
@@ -79,6 +90,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'clean',
     'recess',
+    'concat',
     'uglify'
   ]);
   grunt.registerTask('dev', [
