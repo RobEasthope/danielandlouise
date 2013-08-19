@@ -33,6 +33,7 @@ module.exports = function(grunt) {
             src: [
             '_src/bower_components/jquery/jquery.js',
             '_src/bower_components/bootstrap/js/dropdown.js',
+            '_src/bower_components/FitText.js/jquery.fittext.js',
             '_src/js/app.js'
             ],
             dest: '_src/js/grunt-build.js'

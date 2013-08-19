@@ -6,7 +6,6 @@ grunt watch
 */
 
 //Structure
-
 .container {
 	display: table;
 	height: 100%;
@@ -15,6 +14,51 @@ grunt watch
 .content {
 	display: table-cell;
 	vertical-align: middle;
+	float: none;
+}
+
+// Nav
+.navbar-nav {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.nav >li {
+	float: none;
+	display: inline-block;
+}
+
+.nav-center {
+	float: none;
+	text-align: center;
+	> li {
+		float: none;
+		display: inline-block;
+		text-align: center;
+
+		> a {
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.nav-flex {
+	@media screen and (min-width: @screen-tiny) {
+		width: 30%;
+	}
+	@media screen and (min-width: @screen-small) {
+		width: 20%;
+	}
+}
+
+.nav-heart {
+	display: none;
+
+	@media screen and (min-width: @screen-tiny) {
+		display: block;
+		height: 14px;
+		margin: 0 auto;
+	}
 }
 
 // Page backgrounds
@@ -51,30 +95,9 @@ grunt watch
 	background-attachment: fixed;
 }
 
-// Nav
-.navbar-nav {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-.nav >li {
-	float: none;
-	display: inline-block;
-}
 
-.nav-center {
-	float: none;
-	text-align: center;
-	> li {
-		float: none;
-		display: inline-block;
-		text-align: center;
-		> a {
-			font-weight: 600;
-			text-transform: uppercase;
-		}
-	}
-}
 
+//Landing page
 .landing-wrap {
 	width: 100%;
 	text-align: center;
@@ -86,37 +109,39 @@ grunt watch
 		width: 100%;
 
 		.names {
-			margin: 0;
+			margin-top: 10px;
+			margin-bottom: 0;
 			font-weight: 700;
-			@media screen only and (max-width: @screen-phone) {
-
-			}
-			
-			@media screen only and (min-width: @screen-phone) and (max-width: @screen-tablet) {
-
-			}
-
-			@media screen only and (min-width: @screen-tablet) and (max-width: @screen-medium) {
-				font-size: 72px;
-			}
-
-			@media screen only and (min-width: @screen-medium) and (max-width: @screen-large) {
-				font-size: 72px;
+			line-height: 1;
+			&:after {
+				width: 80%;
+				height: 4px;
+				display: block;
+				background: white;
+				margin: 5px auto;
+				content: ' ';
 			}
 		}
 
 		.subhead {
 			margin: 0;
 			font-weight: 700;
+			line-height: 1;
+
 		}
 	}
 
 	.landing-footer {
 		display: table-cell;
 		vertical-align: bottom;
-		//position: absolute;
-		//bottom: 20px;
 		text-transform: uppercase;
-		//left: 0;
+		sup {text-transform: lowercase}
+
+		.footer-heart {
+			height: 23px;
+			@media screen and (min-width: @screen-small) { height: 28px}
+			@media screen and (min-width: @screen-tablet) { height: 30px}
+			@media screen and (min-width: @screen-medium) { height: 40px; }
+		}
 	}
 }
