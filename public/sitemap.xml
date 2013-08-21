@@ -2,38 +2,30 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://www.danielandlouise.com//blog/archives/</loc>
-        <lastmod>2013-08-21T12:30:39+01:00</lastmod>
+        <lastmod>2013-08-19T09:09:08+01:00</lastmod>
     </url>
     <url>
         <loc>http://www.danielandlouise.com//getting-there/</loc>
-        <lastmod>2013-08-21T18:27:18+01:00</lastmod>
+        <lastmod>2013-08-21T20:41:14+01:00</lastmod>
     </url>
     <url>
         <loc>http://www.danielandlouise.com//gifts/</loc>
-        <lastmod>2013-08-21T18:27:16+01:00</lastmod>
+        <lastmod>2013-08-21T20:42:35+01:00</lastmod>
     </url>
     <url>
         <loc>http://www.danielandlouise.com//</loc>
-        <lastmod>2013-08-21T12:30:39+01:00</lastmod>
+        <lastmod>2013-08-19T09:09:08+01:00</lastmod>
     </url>
     <url>
         <loc>http://www.danielandlouise.com//robots.txt</loc>
-        <lastmod>2013-08-13T12:56:57+01:00</lastmod>
+        <lastmod>2013-08-19T01:35:37+01:00</lastmod>
     </url>
     <url>
         <loc>http://www.danielandlouise.com//rsvp/</loc>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <lastmod>2013-08-20T21:26:53+01:00</lastmod>
-=======
-        <lastmod>2013-08-21T18:27:15+01:00</lastmod>
->>>>>>> 645c3b6475ada6a3630d9c75c38d77f2ec7be6c5
-=======
-        <lastmod>2013-08-21T18:27:15+01:00</lastmod>
->>>>>>> 645c3b6475ada6a3630d9c75c38d77f2ec7be6c5
+        <lastmod>2013-08-21T21:04:09+01:00</lastmod>
     </url>
     <url>
         <loc>http://www.danielandlouise.com//thewedding/</loc>
-        <lastmod>2013-08-21T18:27:19+01:00</lastmod>
+        <lastmod>2013-08-21T20:41:14+01:00</lastmod>
     </url>
 </urlset>
