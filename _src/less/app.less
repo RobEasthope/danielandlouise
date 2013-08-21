@@ -43,10 +43,10 @@ grunt watch
 }
 
 .nav-flex {
-	@media screen and (min-width: @screen-tiny) {
+	@media screen and (min-width: @screen-xs) {
 		width: 30%;
 	}
-	@media screen and (min-width: @screen-small) {
+	@media screen and (min-width: @screen-sm) {
 		width: 20%;
 	}
 }
@@ -54,7 +54,7 @@ grunt watch
 .nav-heart {
 	display: none;
 
-	@media screen and (min-width: @screen-tiny) {
+	@media screen and (min-width: @screen-xs) {
 		display: block;
 		height: 14px;
 		margin: 0 auto;
@@ -68,23 +68,29 @@ grunt watch
 	background-repeat: no-repeat;
 }
 
-.landing, .rsvp{
+.landing, .rsvp {
 	background-image: url('../img/bkg/landing/florence-landscape-IMAX.jpg');
 	background-position: center top;
 
-	@media only screen and (orientation: portrait) and (max-width: @screen-phone) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-phone) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-phone) and (-min-device-pixel-ratio : 1.5) {
+	@media only screen and (orientation: portrait) and (max-width: @screen-xs) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-xs) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-xs) and (-min-device-pixel-ratio : 1.5) {
 	}
 
-	@media only screen and (orientation: landscape) and (max-width: @screen-phone) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-phone) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-phone) and (-min-device-pixel-ratio : 1.5) {
+	@media only screen and (orientation: landscape) and (max-width: @screen-xs) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-xs) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-xs) and (-min-device-pixel-ratio : 1.5) {
 	} 
 }
 
 .thewedding {
 	background-image: url('../img/bkg/thewedding/kingscote_tables-landscape-IMAX.jpg');
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.questions, .getting-there {
+	background-image: url('../img/bkg/gifts/Ao_Nang_beach-landscape-IMAX.jpg');
 	background-position: center center;
 	background-attachment: fixed;
 }
@@ -136,12 +142,13 @@ grunt watch
 		vertical-align: bottom;
 		text-transform: uppercase;
 		sup {text-transform: lowercase}
+		padding-bottom: 20px;
 
 		.footer-heart {
 			height: 23px;
-			@media screen and (min-width: @screen-small) { height: 28px}
-			@media screen and (min-width: @screen-tablet) { height: 30px}
-			@media screen and (min-width: @screen-medium) { height: 40px; }
+			@media screen and (min-width: @screen-xs) { height: 28px}
+			@media screen and (min-width: @screen-sm) { height: 30px}
+			@media screen and (min-width: @screen-md) { height: 40px; }
 		}
 	}
 }
