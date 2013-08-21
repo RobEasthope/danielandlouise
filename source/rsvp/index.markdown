@@ -7,7 +7,6 @@ sharing: true
 footer: true
 css-tag: rsvp
 ---
-
 Name
 RSVP (Yes or no)
 +1's? (simple text box) <!-- Do you want the names of +1's? -->
