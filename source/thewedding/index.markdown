@@ -32,28 +32,12 @@ The entire day is going to be at Kingscote Barn near Tetbury. Kingscote Barn is 
 
 You can read more at [www.kingscotebarn.co.uk](www.kingscotebarn.co.uk)
 
-###Getting there###
+###Isn’t it going to be really cold in November?###
+All parts of the venue are accessible without going outside and we only anticipate dragging you all into the cold for a few photos and some spectacular fireworks, so you don’t have to worry about dressing for the arctic!
 
-Kingscote Barn is in England, more specifically in Gloucestershire, near the village of Tetbury, in a secluded little valley in the Cotswolds.
+###What do you want me to wear?###
+Just to be clear, there is no formal dress code, and we’re not looking to colour coordinate our guests. Suits for the guys, dresses for the girls. If either of these options makes you feel wildly uncomfortable then wear whatever you like.
 
-{map}
-
-The Kingscote Barn
-Binley Farm
-Kingscote
-Tetbury
-Gloucestershire, GL8 8YE
-
-####Approximate driving times:####
-From Bristol - 40 minutes
-From Bath - 45 minutes
-From London - 2 hours 10 minutes
-
-###Taxi's to/from the venue###
-We are planning on booking minibus taxis to get guests to the venue from the centre of Bristol and the centre of Bath, subject to demand. If you think this is a smashing idea and would like to partake, then drop an email to daniel.holly@hotmail.co.uk. Once we know numbers we’ll get in touch with the rough cost per person.
-
-If you’d like to arrange your own taxi, please be aware that the mobile signal at the venue is poor, and the local taxis will get booked up quickly, so book in advance. 
-
-###Parking###
-There are plenty of parking spaces at the venue, and cars can be left onsite and collected the next day.
+###Do I need loads of cash on me?###
+The only thing you need cash for is a taxi, if you are getting one. We are stocking a full free bar, which is an invitation to misbehave if ever there was one!
 
