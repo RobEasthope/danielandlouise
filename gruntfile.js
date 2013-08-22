@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         bootstrap: {
             src: [
             '_src/bower_components/jquery/jquery.js',
-            '_src/bower_components/bootstrap/js/dropdown.js',
+            '_src/bower_components/bootstrap/dist/js/bootstrap.min.js', 
             '_src/bower_components/FitText.js/jquery.fittext.js',
             '_src/js/app.js'
             ],

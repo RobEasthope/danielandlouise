@@ -6,6 +6,9 @@ grunt watch
 */
 
 //Structure
+
+body { padding-top: 50px; }
+
 .container {
 	display: table;
 	height: 100%;
@@ -18,28 +21,30 @@ grunt watch
 }
 
 // Nav
-.navbar-nav {
-	max-width: 1000px;
-	margin: 0 auto;
-}
-.nav >li {
-	float: none;
-	display: inline-block;
-}
 
-.nav-center {
-	float: none;
-	text-align: center;
-	> li {
+	.navbar-nav {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.nav >li {
 		float: none;
 		display: inline-block;
-		text-align: center;
-
-		> a {
-			font-weight: 600;
-			text-transform: uppercase;
-		}
 	}
+
+	.nav-center {
+		float: none;
+		text-align: center;
+		> li {
+			float: none;
+			display: inline-block;
+			text-align: center;
+
+			> a {
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
 }
 
 .nav-flex {
@@ -51,6 +56,7 @@ grunt watch
 	}
 }
 
+
 .nav-heart {
 	display: none;
 
@@ -61,14 +67,27 @@ grunt watch
 	}
 }
 
+.navbar-toggle {padding: 0;}
+
+.navbar-brand {padding: 17px 15px;}
+
+.mobile-nav-icon {
+	display: block;
+	width: 40px;
+	padding: 0;
+	background-image: url('../img/icons/heart-icon.svg');
+	background-size: 40px;
+	height: 40px;
+}
+
 // Page backgrounds
 .bkg {
-	margin-top: 50px;
+	//margin-top: -30px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.landing, .rsvp {
+.landing, {
 	background-image: url('../img/bkg/landing/florence-landscape-IMAX.jpg');
 	background-position: center top;
 
@@ -89,8 +108,8 @@ grunt watch
 	background-attachment: fixed;
 }
 
-.questions, .getting-there {
-	background-image: url('../img/bkg/gifts/Ao_Nang_beach-landscape-IMAX.jpg');
+.getting-there {
+	background-image: url('../img/bkg/getting-there/getting-there.jpg');
 	background-position: center center;
 	background-attachment: fixed;
 }
@@ -101,6 +120,13 @@ grunt watch
 	background-attachment: fixed;
 }
 
+.rsvp {
+	background-image: url('../img/bkg/rsvp/lijiang.jpg');
+	background-position: center top;
+	background-attachment: fixed;
+}
+
+
 
 
 //Landing page
@@ -108,6 +134,7 @@ grunt watch
 	width: 100%;
 	text-align: center;
 	display: table;
+	//padding-top: 20px;
 
 	.landing-header {
 		display: table-row;
@@ -151,4 +178,15 @@ grunt watch
 			@media screen and (min-width: @screen-md) { height: 40px; }
 		}
 	}
+}
+
+.text-bkg {
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 15px;
+	margin: 30px 0;
+}
+
+@media screen and projection {
+.label {font-weight: 300;}
 }
