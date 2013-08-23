@@ -24,7 +24,7 @@ css-tag: rsvp
 </div></div></div> <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item  ss-text"><div class=""><label class="ss-q-item-label" for="entry_1223045489"><div class="ss-q-title">Email address
 </div>
-<div class="ss-q-help ss-secondary-text" dir="ltr">Just in case there are any last minute updates</div></label>
+<div class="ss-q-help ss-secondary-text" dir="ltr">(Just in case there are any last minute updates)</div></label>
 <input type="text" name="entry.1223045489" value="" class="form-control" id="entry_1223045489" dir="auto" title="">
 <div class="error-message"></div>
 
@@ -38,7 +38,7 @@ css-tag: rsvp
 </div></div></div> <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1336612328"><div class="ss-q-title">Anything else we need to know?
 </div>
-<div class="ss-q-help ss-secondary-text" dir="ltr">High chairs for small children, etc</div></label>
+<div class="ss-q-help ss-secondary-text" dir="ltr">(High chairs for small children, etc)</div></label>
 <input type="text" name="entry.1336612328" value="" class="form-control" id="entry_1336612328" dir="auto" title="">
 <div class="error-message"></div>
 
@@ -49,5 +49,5 @@ css-tag: rsvp
 
 
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-<input type="submit" name="submit" value="Submit" id="ss-submit" class="btn btn-success"></td>
+<input type="submit" name="submit" value="RSVP" id="ss-submit" class="btn btn-success rsvp-btn"></td>
 </tr></tbody></table></div></ol></form>
