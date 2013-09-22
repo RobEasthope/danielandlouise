@@ -85,51 +85,326 @@ body { padding-top: 50px; }
 	//margin-top: -30px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #40FF00;
 }
 
 .landing, {
-	background-image: url('../img/bkg/landing/florence-landscape-IMAX.jpg');
 	background-position: center top;
 
-	@media only screen and (orientation: portrait) and (max-width: @screen-xs) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-xs) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-xs) and (-min-device-pixel-ratio : 1.5) {
+	// Mobile
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/landing/florence-4-3-P.jpg');
 	}
 
-	@media only screen and (orientation: landscape) and (max-width: @screen-xs) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-xs) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-xs) and (-min-device-pixel-ratio : 1.5) {
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/landing/florence-16-9-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-16-9-L@2x.jpg');
+	}
+
+	// Tablet
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/landing/florence-4-3-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/landing/florence-4-3-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-4-3-L@2x.jpg');
+	}
+
+	// Desktop
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
+		background-image: url('../img/bkg/landing/florence-1400.jpg');
+	}
+
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-1400@2x.jpg');
+	}
+
+	// Anything bigger
+	@media only screen and (min-width: 1400px) {
+		background-image: url('../img/bkg/landing/florence-max.jpg');
 	}
 
 	.text-bkg {
 		background-color: transparent;
 		color: white;
-		border-radius: 5px;
 	}
 }
 
 .thewedding {
-	background-image: url('../img/bkg/thewedding/kingscote_tables-landscape-IMAX.jpg');
 	background-position: center center;
 	background-attachment: fixed;
+
+	// Mobile
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-16-9-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-16-9-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-16-9-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-16-9-L@2x.jpg');
+	}
+
+	// Tablet
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-4-3-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-4-3-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-4-3-L@2x.jpg');
+	}
+
+	// Desktop
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-1400.jpg');
+	}
+
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-1400@2x.jpg');
+	}
+
+	// Anything bigger
+	@media only screen and (min-width: 1400px) {
+		background-image: url('../img/bkg/thewedding/kingscote_tables-max.jpg');
+	}
 }
 
 .getting-there {
-	background-image: url('../img/bkg/getting-there/getting-there.jpg');
 	background-position: center center;
 	background-attachment: fixed;
+
+	// Mobile
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-16-9-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-16-9-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-16-9-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-16-9-L@2x.jpg');
+	}
+
+	// Tablet
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-4-3-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-4-3-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-4-3-L@2x.jpg');
+	}
+
+	// Desktop
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-max.jpg');
+	}
+
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-max.jpg');
+	}
+
+	// Anything bigger
+	@media only screen and (min-width: 1400px) {
+		background-image: url('../img/bkg/getting-there/gloucestershire-max.jpg');
+	}
 }
 
 .gifts {
-	background-image: url('../img/bkg/gifts/Ao_Nang_beach-landscape-IMAX.jpg');
 	background-position: center center;
 	background-attachment: fixed;
+
+	// Mobile
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-16-9-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-16-9-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-16-9-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-16-9-L@2x.jpg');
+	}
+
+	// Tablet
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-4-3-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-4-3-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-4-3-L@2x.jpg');
+	}
+
+	// Desktop
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-max.jpg');
+	}
+
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/gifts/Ao_Nang-max.jpg');
+	}
+
+	// Anything bigger
+	@media only screen and (min-width: 1400px) {
+		background-image: url('../img/bkg/gifts/Ao_Nang_beach-landscape-IMAX.jpg');
+	}
 }
 
 .rsvp {
-	background-image: url('../img/bkg/rsvp/lijiang.jpg');
 	background-position: center top;
 	background-attachment: fixed;
+
+	// Mobile
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/rsvp/lijiang-16-9-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/rsvp/lijiang-16-9-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/rsvp/lijiang-16-9-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/rsvp/lijiang-16-9-L@2x.jpg');
+	}
+
+	// Tablet
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/rsvp/lijiang-4-3-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/rsvp/lijiang-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/rsvp/lijiang-4-3-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/rsvp/lijiang-4-3-L@2x.jpg');
+	}
+
+	// Desktop
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
+		background-image: url('../img/bkg/rsvp/lijiang-1400.jpg');
+	}
+
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/rsvp/lijiang-1400@2x.jpg');
+	}
+
+	// Anything bigger
+	@media only screen and (min-width: 1400px) {
+		background-image: url('../img/bkg/rsvp/lijiang-max.jpg');
+	}
 }
 
 
@@ -191,6 +466,7 @@ body { padding-top: 50px; }
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 15px;
 	margin: 30px 0;
+	border-radius: 5px;
 }
 
 .ss-q-title, .ss-secondary-text {font-weight: normal;}
