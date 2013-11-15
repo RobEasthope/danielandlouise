@@ -1,10 +1,10 @@
 // App JS
 
 function oknFullScreen() {
-	if ($(window).height() > $(".bkg").height() + 50) {
+	if ($(window).height() > $(".bkg").height() + 30) {
 		// Enlarge jumbotron to fullscreen
 		$(".bkg").css("height",function(){
-			return ($(window).height() - 50);
+			return ($(window).height() - 30);
 		});
 	}
 }
