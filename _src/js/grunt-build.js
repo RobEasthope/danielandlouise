@@ -8884,7 +8884,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap requires jQuery");+func
 // App JS
 
 function oknFullScreen() {
-	if ($(window).height() > $(".bkg").height() + 50) {
+	if ($(window).height() > $(".bkg").height() + 90) {
 		// Enlarge jumbotron to fullscreen
 		$(".bkg").css("height",function(){
 			return ($(window).height() - 50);
@@ -8896,7 +8896,7 @@ function oknFullScreenLandingText() {
 	//if ($(".landing-wrap").height() > $(window).height()) {
 		// Enlarge jumbotron to fullscreen
 		$(".landing-wrap").css("height",function(){
-			return ($(".bkg").height() -30);
+			return ($(".bkg").height() - 90);
 		});
 
 		// $(".landing-wrap > .landing-header > .names:after").css("width",function(){
