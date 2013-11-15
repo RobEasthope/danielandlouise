@@ -8896,7 +8896,7 @@ function oknFullScreenLandingText() {
 	//if ($(".landing-wrap").height() > $(window).height()) {
 		// Enlarge jumbotron to fullscreen
 		$(".landing-wrap").css("height",function(){
-			return ($(".bkg").height() - 90);
+			return ($(".bkg").height() -30);
 		});
 
 		// $(".landing-wrap > .landing-header > .names:after").css("width",function(){

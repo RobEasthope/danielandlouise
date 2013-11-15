@@ -13,7 +13,11 @@ function oknFullScreenLandingText() {
 	//if ($(".landing-wrap").height() > $(window).height()) {
 		// Enlarge jumbotron to fullscreen
 		$(".landing-wrap").css("height",function(){
+<<<<<<< HEAD
 			return ($(".bkg").height() - 50);
+=======
+			return ($(".bkg").height() -30);
+>>>>>>> Typography tweaks
 		});
 
 		// $(".landing-wrap > .landing-header > .names:after").css("width",function(){

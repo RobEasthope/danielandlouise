@@ -488,11 +488,11 @@ body {}
 .text-bkg {
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 15px 15px 25px 15px;
+	padding: 1px 15px 25px 15px;
 	margin: 30px 0;
 	border-radius: 5px;
 	@media only screen and (min-width: @screen-xs) {
-		padding: 15px 25px 25px 25px;
+		padding: 1px 25px 25px 25px;
 	}
 }
 
@@ -518,11 +518,15 @@ ul {
 
 h1, h2 {text-align: center;}
 
-h2:after {
-	display: block;
-	width: 75px;
-	height: 1px;
-	margin: 10px auto 16px auto;
-	background: @india-ink;
-	content: ' ';
+h2 {
+	padding-top: 25px;
+
+	&:after {
+		display: block;
+		width: 75px;
+		height: 1px;
+		margin: 10px auto 16px auto;
+		background: @india-ink;
+		content: ' ';
+	}
 }
