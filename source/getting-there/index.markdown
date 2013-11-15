@@ -18,7 +18,7 @@ Tetbury,
 Gloucestershire,  
 GL8 8YE
 
-###Approximate driving times:###
+###Approximate driving times###
 
 <table border="0" bordercolor="" style="background-color:" width="100%" cellpadding="5" cellspacing="0">
 	<tr>
@@ -35,7 +35,7 @@ GL8 8YE
 	</tr>
 </table>
 
-###Taxi's to/from the venue###
+###Taxis to and from the venue###
 We are planning on booking minibus taxis to get guests to the venue from the centre of Bristol and the centre of Bath, subject to demand. If you think this is a smashing idea and would like to partake, then drop an [email to Daniel](mailto: daniel.holly@hotmail.co.uk). Once we know numbers we’ll get in touch with the rough cost per person.
 
 If you’d like to arrange your own taxi, please be aware that the mobile signal at the venue is poor, and the local taxis will get booked up quickly, so book in advance. 

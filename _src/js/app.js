@@ -15,6 +15,11 @@ function oknFullScreenLandingText() {
 		$(".landing-wrap").css("height",function(){
 			return ($(".bkg").height() - 50);
 		});
+
+		// $(".landing-wrap > .landing-header > .names:after").css("width",function(){
+		// 	return ($(".names").width());
+		// });
+
 	//}
 }
 

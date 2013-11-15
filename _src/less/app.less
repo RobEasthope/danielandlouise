@@ -7,7 +7,7 @@ grunt watch
 
 //Structure
 
-body { padding-top: 50px; }
+body {}
 
 .container {
 	display: table;
@@ -21,6 +21,11 @@ body { padding-top: 50px; }
 }
 
 // Nav
+
+	.navbar {
+		border: 0;
+		margin-bottom: 0;
+	}
 
 	.navbar-nav {
 		max-width: 1000px;
@@ -67,7 +72,9 @@ body { padding-top: 50px; }
 	}
 }
 
-.navbar-toggle {padding: 0;}
+.navbar-toggle {
+	padding: 0;
+}
 
 .navbar-brand {padding: 17px 15px;}
 
@@ -423,21 +430,29 @@ body { padding-top: 50px; }
 		width: 100%;
 
 		.names {
+			font-family: @font-family-base;
 			margin-top: 10px;
 			margin-bottom: 0;
 			font-weight: 700;
 			line-height: 1;
 			&:after {
-				width: 80%;
+				width: 40%;
 				height: 4px;
 				display: block;
 				background: white;
 				margin: 5px auto;
 				content: ' ';
+				@media only screen and (min-width: @screen-md) {
+					width: 30%;
+				}
+				@media only screen and (min-width: @screen-lg) {
+					width: 15%;
+				}
 			}
 		}
 
 		.subhead {
+			font-family: @font-family-base;
 			margin: 0;
 			font-weight: 700;
 			line-height: 1;
@@ -451,6 +466,15 @@ body { padding-top: 50px; }
 		text-transform: uppercase;
 		sup {text-transform: lowercase}
 		padding-bottom: 20px;
+		h2 {
+			font-family: @font-family-base;
+			&:after {display: block;
+				width: 75px;
+				height: 0px;
+				margin: 16px auto 16px auto;
+				background: @india-ink;
+				content: ' ';}
+		}
 
 		.footer-heart {
 			height: 23px;
@@ -464,9 +488,12 @@ body { padding-top: 50px; }
 .text-bkg {
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 15px;
+	padding: 15px 15px 25px 15px;
 	margin: 30px 0;
 	border-radius: 5px;
+	@media only screen and (min-width: @screen-xs) {
+		padding: 15px 25px 25px 25px;
+	}
 }
 
 .ss-q-title, .ss-secondary-text {font-weight: normal;}
@@ -480,4 +507,22 @@ ul {
 	border: 5px solid white;
 	margin-bottom: 12px;
 	width: 100%;
+}
+
+.center {
+	display: block;
+	text-align: center;
+}
+
+#navigation-table {width: 100%;}
+
+h1, h2 {text-align: center;}
+
+h2:after {
+	display: block;
+	width: 75px;
+	height: 1px;
+	margin: 10px auto 16px auto;
+	background: @india-ink;
+	content: ' ';
 }

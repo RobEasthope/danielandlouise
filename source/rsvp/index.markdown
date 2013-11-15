@@ -7,6 +7,9 @@ sharing: true
 footer: true
 css-tag: rsvp
 ---
+
+##RSVP##
+
 <form class="form-horizontal" role="form" action="https://docs.google.com/forms/d/1Pir_a9O4EJ11T6i7FBvUe5fjyQA7g3xya3KP6_tYqY4/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit=""><ol style="padding-left: 0">
 <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_59202380"><div class="ss-q-title">Name(s)
@@ -49,5 +52,5 @@ css-tag: rsvp
 
 
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-<input type="submit" name="submit" value="RSVP" id="ss-submit" class="btn btn-success rsvp-btn"></td>
+<span class="center"><input type="submit" name="submit" value="RSVP" id="ss-submit" class="btn btn-success rsvp-btn"></td></span>
 </tr></tbody></table></div></ol></form>
