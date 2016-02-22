@@ -31,9 +31,9 @@ module.exports = function(grunt) {
         },
         bootstrap: {
             src: [
-            '_src/bower_components/jquery/jquery.js',
-            '_src/bower_components/bootstrap/dist/js/bootstrap.min.js', 
-            '_src/bower_components/FitText.js/jquery.fittext.js',
+            'bower_components/jquery/jquery.js',
+            'bower_components/bootstrap/dist/js/bootstrap.min.js',
+            'bower_components/FitText.js/jquery.fittext.js',
             '_src/js/app.js'
             ],
             dest: '_src/js/grunt-build.js'
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
       less: {
         files: [
           // Plugins
-          '_src/bower_components/bootstrap/less/*.less',
+          'bower_components/bootstrap/less/*.less',
           // App
           '_src/less/app-variables.less',
           '_src/less/compile.less',
