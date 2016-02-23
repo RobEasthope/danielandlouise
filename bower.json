@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.6",
-    "FitText.js": "^1.2.0"
+    "FitText.js": "^1.2.0",
+    "bootstrap": "^3.3.6"
   }
 }
