@@ -1,0 +1,134 @@
+.landing {
+	background-position: center top;
+
+	// Mobile
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/landing/florence-4-3-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
+		background-image: url('../img/bkg/landing/florence-16-9-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-16-9-L@2x.jpg');
+	}
+
+	// Tablet
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/landing/florence-4-3-P.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-4-3-P@2x.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
+		background-image: url('../img/bkg/landing/florence-4-3-L.jpg');
+	}
+
+	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-4-3-L@2x.jpg');
+	}
+
+	// Desktop
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
+		background-image: url('../img/bkg/landing/florence-1400.jpg');
+	}
+
+	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../img/bkg/landing/florence-1400@2x.jpg');
+	}
+
+	// Anything bigger
+	@media only screen and (min-width: 1400px) {
+		background-image: url('../img/bkg/landing/florence-max.jpg');
+	}
+
+	.text-bkg {
+		background-color: transparent;
+		color: white;
+	}
+}
+
+//Landing page
+.landing-wrap {
+	width: 100%;
+	text-align: center;
+	display: table;
+	//padding-top: 20px;
+
+	.landing-header {
+		display: table-row;
+		text-transform: uppercase;
+		width: 100%;
+
+		.names {
+			font-family: @font-family-base;
+			margin-top: 10px;
+			margin-bottom: 0;
+			font-weight: 700;
+			line-height: 1;
+			&:after {
+				width: 40%;
+				height: 4px;
+				display: block;
+				background: white;
+				margin: 5px auto;
+				content: ' ';
+				@media only screen and (min-width: @screen-md) {
+					width: 30%;
+				}
+				@media only screen and (min-width: @screen-lg) {
+					width: 15%;
+				}
+			}
+		}
+
+		.subhead {
+			font-family: @font-family-base;
+			margin: 0;
+			font-weight: 700;
+			line-height: 1;
+
+		}
+	}
+
+	.landing-footer {
+		display: table-cell;
+		vertical-align: bottom;
+		text-transform: uppercase;
+		sup {text-transform: lowercase}
+		padding-bottom: 20px;
+		h2 {
+			font-family: @font-family-base;
+			&:after {display: block;
+				width: 75px;
+				height: 0px;
+				margin: 16px auto 16px auto;
+				background: @india-ink;
+				content: ' ';}
+		}
+
+		.footer-heart {
+			height: 23px;
+			@media screen and (min-width: @screen-xs) { height: 28px}
+			@media screen and (min-width: @screen-sm) { height: 30px}
+			@media screen and (min-width: @screen-md) { height: 40px; }
+		}
+	}
+}
