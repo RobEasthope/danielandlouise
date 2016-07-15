@@ -3,60 +3,36 @@
 	background-attachment: fixed;
 
 	// Mobile
-	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
-		background-image: url('../img/bkg/rsvp/lijiang-16-9-P.jpg');
+	@media (orientation: portrait) {
+		background-image: url('../images/bkg/rsvp/lijiang-16-9-P@2x.jpg');
 	}
 
-	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/bkg/rsvp/lijiang-16-9-P@2x.jpg');
+	@media (orientation: landscape) {
+		background-image: url('../images/bkg/rsvp/lijiang-16-9-L@2x.jpg');
 	}
 
-	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
-		background-image: url('../img/bkg/rsvp/lijiang-16-9-L.jpg');
-	}
-
-	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/bkg/rsvp/lijiang-16-9-L@2x.jpg');
+	@media only screen and (orientation: landscape) and (max-width: $screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: $screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
+	only screen and (orientation: landscape) and (max-width: $screen-sm) and (-min-device-pixel-ratio : 1.5) {
+		background-image: url('../images/bkg/rsvp/lijiang-16-9-L@2x.jpg');
 	}
 
 	// Tablet
-	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
-		background-image: url('../img/bkg/rsvp/lijiang-4-3-P.jpg');
+	@media (orientation: portrait) and (min-width: $screen-sm) {
+		background-image: url('../images/bkg/rsvp/lijiang-4-3-P@2x.jpg');
 	}
 
-	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/bkg/rsvp/lijiang-4-3-P@2x.jpg');
-	}
-
-	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
-		background-image: url('../img/bkg/rsvp/lijiang-4-3-L.jpg');
-	}
-
-	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/bkg/rsvp/lijiang-4-3-L@2x.jpg');
+	@media (orientation: landscape) and (min-width: $screen-sm) {
+		background-image: url('../images/bkg/rsvp/lijiang-4-3-L@2x.jpg');
 	}
 
 	// Desktop
-	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
-		background-image: url('../img/bkg/rsvp/lijiang-1400.jpg');
-	}
-
-	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../img/bkg/rsvp/lijiang-1400@2x.jpg');
+	@media (min-width: $screen-lg) {
+		background-image: url('../images/bkg/rsvp/lijiang-1400@2x.jpg');
 	}
 
 	// Anything bigger
-	@media only screen and (min-width: 1400px) {
-		background-image: url('../img/bkg/rsvp/lijiang-max.jpg');
+	@media (min-width: 1400px) {
+		background-image: url('../images/bkg/rsvp/lijiang-max.jpg');
 	}
 }
