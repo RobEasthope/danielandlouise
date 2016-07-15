@@ -123,7 +123,7 @@ gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-	gulp.watch('app/**/*.jade', ['jade']);
+	gulp.watch('app/markup/**/*.jade', ['jade']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
