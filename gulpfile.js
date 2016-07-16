@@ -119,6 +119,7 @@ gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
 
   gulp.watch([
     'app/*.html',
+    '.tmp/*.html',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
