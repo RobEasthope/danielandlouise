@@ -3,60 +3,25 @@
 	background-attachment: fixed;
 
 	// Mobile
-	@media only screen and (orientation: portrait) and (max-width: @screen-sm) {
-		background-image: url('../images/bkg/getting-there/gloucestershire-16-9-P.jpg');
-	}
-
-	@media only screen and (orientation: portrait) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+	@include breakpoint(portrait) {
 		background-image: url('../images/bkg/getting-there/gloucestershire-16-9-P@2x.jpg');
 	}
 
-	@media only screen and (orientation: landscape) and (max-width: @screen-sm) {
-		background-image: url('../images/bkg/getting-there/gloucestershire-16-9-L.jpg');
-	}
-
-	@media only screen and (orientation: landscape) and (max-width: @screen-sm) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and (max-width: @screen-sm) and (-min-device-pixel-ratio : 1.5) {
+	@include breakpoint(landscape) {
 		background-image: url('../images/bkg/getting-there/gloucestershire-16-9-L@2x.jpg');
 	}
 
 	// Tablet
-	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) {
-		background-image: url('../images/bkg/getting-there/gloucestershire-4-3-P.jpg');
-	}
-
-	@media only screen and (orientation: portrait) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: portrait) and (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+	@media (orientation: portrait) and #{breakpoint(medium)} {
 		background-image: url('../images/bkg/getting-there/gloucestershire-4-3-P@2x.jpg');
 	}
 
-	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) {
-		background-image: url('../images/bkg/getting-there/gloucestershire-4-3-L.jpg');
-	}
-
-	@media only screen and (orientation: landscape) and (min-width: @screen-sm) and (max-width: @screen-lg) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (orientation: landscape) and and (min-width: @screen-sm) (max-width: @screen-lg) and (-min-device-pixel-ratio : 1.5) {
+	@media (orientation: landscape) and #{breakpoint(medium)} {
 		background-image: url('../images/bkg/getting-there/gloucestershire-4-3-L@2x.jpg');
 	}
 
 	// Desktop
-	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) {
-		background-image: url('../images/bkg/getting-there/gloucestershire-max.jpg');
-	}
-
-	@media only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (min-width: @screen-lg) and  (max-width: 1400px) and (-min-moz-device-pixel-ratio : 1.5),
-	only screen and (min-width: @screen-lg) and (max-width: 1400px) and (-min-device-pixel-ratio : 1.5) {
-		background-image: url('../images/bkg/getting-there/gloucestershire-max.jpg');
-	}
-
-	// Anything bigger
-	@media only screen and (min-width: 1400px) {
+	@include breakpoint(large) {
 		background-image: url('../images/bkg/getting-there/gloucestershire-max.jpg');
 	}
 }

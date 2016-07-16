@@ -15,10 +15,10 @@ $icon-font-path: '../fonts/';
 
 // Pages
 @import "pages/landing.scss";
-// @import "pages/the-wedding.scss";
-// @import "pages/getting-there.scss";
-// @import "pages/gifts.scss";
-// @import "pages/rsvp.scss";
+@import "pages/the-wedding.scss";
+@import "pages/getting-there.scss";
+@import "pages/gifts.scss";
+@import "pages/rsvp.scss";
 
 
 @import "sandbox.scss";

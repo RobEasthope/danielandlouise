@@ -14,9 +14,12 @@
 	}
 
 	// Tablet
-
-	@include breakpoint(medium) {
+	@media (orientation: portrait) and #{breakpoint(medium)} {
 		background-image: url('../images/bkg/landing/florence-4-3-P@2x.jpg');
+	}
+
+	@media (orientation: landscape) and #{breakpoint(medium)} {
+		background-image: url('../images/bkg/landing/florence-4-3-L@2x.jpg');
 	}
 
 	// Desktop
