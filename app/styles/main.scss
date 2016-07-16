@@ -9,6 +9,8 @@ $icon-font-path: '../fonts/';
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
 
 // Components
 @import "browser-upgrade.scss";
