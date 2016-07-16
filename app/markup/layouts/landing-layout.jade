@@ -1,14 +1,14 @@
 doctype html
 html.no-js(lang='')
 	head
-		include head
+		include components/head
 		
 	body
 		//- Browser upgrade block
-		include browser-upgrade
+		include components/browser-upgrade
 		
 		//- Page content
 		block content
 		
 		//- Javascript calls
-		include js-calls
+		include components/js-calls
