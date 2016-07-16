@@ -1,5 +1,7 @@
 console.log('\'Allo \'Allo!');
 
+$(document).foundation();
+
 // App JS
 
 function oknFullScreen() {
