@@ -91,11 +91,10 @@
 //
 //
 .text-bkg {
-	background-color: white;
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 1px 15px 25px 15px;
+	// padding: 1px 15px 25px 15px;
 	margin: 30px 0;
-	border-radius: 5px;
+	border-radius: rem-calc(10);
 	// @media only screen and (min-width: $screen-xs) {
 	// 	padding: 1px 25px 25px 25px;
 	// }
