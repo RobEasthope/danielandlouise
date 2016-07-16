@@ -47,7 +47,7 @@
 @import "colour-palette.scss";
 
 $global-font-size: 100%;
-$global-width: rem-calc(600);
+$global-width: rem-calc(500);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: $pomegranate,
@@ -559,7 +559,7 @@ $tooltip-radius: $global-radius;
 // 36. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0.0rem;
 $topbar-background: $white;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
