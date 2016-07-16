@@ -44,12 +44,13 @@
 
 // 1. Global
 // ---------
+@import "colour-palette.scss";
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(600);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: $pomegranate,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,

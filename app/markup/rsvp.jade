@@ -2,64 +2,66 @@ extends layouts/basic-layout
 
 block content
   main.bkg.rsvp
-    h2 RSVP
+		.row
+			.small-12.column
+		    h2 RSVP
 
-    form#ss-form.form-horizontal(role='form', action='https://docs.google.com/forms/d/1Pir_a9O4EJ11T6i7FBvUe5fjyQA7g3xya3KP6_tYqY4/formResponse?embedded=true', method='POST', target='_self', onsubmit='')
-    ol(style='padding-left: 0')
-      .ss-form-question.errorbox-good
-        .ss-item.ss-text(dir='ltr')
-          .ss-form-entry
-            label.ss-q-item-label(for='entry_59202380')
-              .ss-q-title
-                | Name(s)
-              .ss-q-help.ss-secondary-text(dir='ltr')
-            input#entry_59202380.form-control(type='text', name='entry.59202380', value='', dir='auto', title='')
-            .error-message
-      .ss-form-question.errorbox-good
-        .ss-item.ss-select(dir='ltr')
-          .ss-form-entry
-            label.ss-q-item-label(for='entry_297761117')
-              .ss-q-title
-                | Can you make it?
-              .ss-q-help.ss-secondary-text(dir='ltr')
-            select#entry_297761117.form-control(name='entry.297761117')
-              option(value='')
-              option(value='Yes') Yes
-              option(value='No') No
-      .ss-form-question.errorbox-good
-        .ss-item.ss-text(dir='ltr')
-          div
-            label.ss-q-item-label(for='entry_1223045489')
-              .ss-q-title
-                | Email address
-              .ss-q-help.ss-secondary-text(dir='ltr') (Just in case there are any last minute updates)
-            input#entry_1223045489.form-control(type='text', name='entry.1223045489', value='', dir='auto', title='')
-            .error-message
-      .ss-form-question.errorbox-good
-        .ss-item.ss-text(dir='ltr')
-          .ss-form-entry
-            label.ss-q-item-label(for='entry_1728823820')
-              .ss-q-title
-                | Any dietary requirements?
-              .ss-q-help.ss-secondary-text(dir='ltr')
-            input#entry_1728823820.form-control(type='text', name='entry.1728823820', value='', dir='auto', title='')
-            .error-message
-      .ss-form-question.errorbox-good
-        .ss-item.ss-text(dir='ltr')
-          .ss-form-entry
-            label.ss-q-item-label(for='entry_1336612328')
-              .ss-q-title
-                | Anything else we need to know?
-              .ss-q-help.ss-secondary-text(dir='ltr') (High chairs for small children, etc)
-            input#entry_1336612328.form-control(type='text', name='entry.1336612328', value='', dir='auto', title='')
-            .error-message
-      input(type='hidden', name='draftResponse', value='[]\
-      ')
-      input(type='hidden', name='pageHistory', value='0')
-      .ss-item.ss-navigate
-        table#navigation-table
-          tbody
-            tr
-              td#navigation-buttons.ss-form-entry.goog-inline-block(dir='ltr')
-                span.center
-                  input#ss-submit.btn.btn-success.button(type='submit', name='submit', value='RSVP')
+		    form#ss-form.form-horizontal(role='form', action='https://docs.google.com/forms/d/1Pir_a9O4EJ11T6i7FBvUe5fjyQA7g3xya3KP6_tYqY4/formResponse?embedded=true', method='POST', target='_self', onsubmit='')
+		    ol(style='padding-left: 0')
+		      .ss-form-question.errorbox-good
+		        .ss-item.ss-text(dir='ltr')
+		          .ss-form-entry
+		            label.ss-q-item-label(for='entry_59202380')
+		              .ss-q-title
+		                | Name(s)
+		              .ss-q-help.ss-secondary-text(dir='ltr')
+		            input#entry_59202380.form-control(type='text', name='entry.59202380', value='', dir='auto', title='')
+		            .error-message
+		      .ss-form-question.errorbox-good
+		        .ss-item.ss-select(dir='ltr')
+		          .ss-form-entry
+		            label.ss-q-item-label(for='entry_297761117')
+		              .ss-q-title
+		                | Can you make it?
+		              .ss-q-help.ss-secondary-text(dir='ltr')
+		            select#entry_297761117.form-control(name='entry.297761117')
+		              option(value='')
+		              option(value='Yes') Yes
+		              option(value='No') No
+		      .ss-form-question.errorbox-good
+		        .ss-item.ss-text(dir='ltr')
+		          div
+		            label.ss-q-item-label(for='entry_1223045489')
+		              .ss-q-title
+		                | Email address
+		              .ss-q-help.ss-secondary-text(dir='ltr') (Just in case there are any last minute updates)
+		            input#entry_1223045489.form-control(type='text', name='entry.1223045489', value='', dir='auto', title='')
+		            .error-message
+		      .ss-form-question.errorbox-good
+		        .ss-item.ss-text(dir='ltr')
+		          .ss-form-entry
+		            label.ss-q-item-label(for='entry_1728823820')
+		              .ss-q-title
+		                | Any dietary requirements?
+		              .ss-q-help.ss-secondary-text(dir='ltr')
+		            input#entry_1728823820.form-control(type='text', name='entry.1728823820', value='', dir='auto', title='')
+		            .error-message
+		      .ss-form-question.errorbox-good
+		        .ss-item.ss-text(dir='ltr')
+		          .ss-form-entry
+		            label.ss-q-item-label(for='entry_1336612328')
+		              .ss-q-title
+		                | Anything else we need to know?
+		              .ss-q-help.ss-secondary-text(dir='ltr') (High chairs for small children, etc)
+		            input#entry_1336612328.form-control(type='text', name='entry.1336612328', value='', dir='auto', title='')
+		            .error-message
+		      input(type='hidden', name='draftResponse', value='[]\
+		      ')
+		      input(type='hidden', name='pageHistory', value='0')
+		      .ss-item.ss-navigate
+		        table#navigation-table
+		          tbody
+		            tr
+		              td#navigation-buttons.ss-form-entry.goog-inline-block(dir='ltr')
+		                span.center
+		                  input#ss-submit.btn.btn-success.button(type='submit', name='submit', value='RSVP')
