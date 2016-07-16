@@ -28,11 +28,11 @@ function oknFullScreenLandingText() {
 }
 
 $(document).ready(function() {
-	oknFullScreen();
-	oknFullScreenLandingText();
+	// oknFullScreen();
+	// oknFullScreenLandingText();
 });
 
 $(window).resize(function() {
-	oknFullScreen();
-	oknFullScreenLandingText();
+	// oknFullScreen();
+	// oknFullScreenLandingText();
 });
