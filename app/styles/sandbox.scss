@@ -1,15 +1,8 @@
 
 @import "colour-palette.scss";
 //Structure
-.container {
-	display: table;
+html, body {
 	height: 100%;
-}
-
-.content {
-	display: table-cell;
-	vertical-align: middle;
-	float: none;
 }
 
 // Nav
@@ -92,8 +85,9 @@
 //
 .text-bkg {
 	background-color: rgba(255, 255, 255, 0.8);
-	// padding: 1px 15px 25px 15px;
-	margin: 30px 0;
+	padding-bottom: rem-calc(25);
+	margin-top: rem-calc(25);
+	margin-bottom: rem-calc(25);
 	border-radius: rem-calc(10);
 	// @media only screen and (min-width: $screen-xs) {
 	// 	padding: 1px 25px 25px 25px;
