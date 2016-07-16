@@ -2,6 +2,7 @@
 
 .landing {
 	background-position: center top;
+	height: 100vh;
 
 	// Mobile
 	@include breakpoint(portrait) {
