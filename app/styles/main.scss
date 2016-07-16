@@ -1,20 +1,22 @@
 // Variables
 $icon-font-path: '../fonts/';
 @import "colour-palette.scss";
-@import "bootstrap-variables.scss";
 
 // bower:scss
+@import "bower_components/foundation-sites/scss/foundation.scss";
 // endbower
+
+@include foundation-everything;
 
 // Components
 @import "browser-upgrade.scss";
 
 // Pages
-@import "pages/landing.scss";
+// @import "pages/landing.scss";
 // @import "pages/the-wedding.scss";
 // @import "pages/getting-there.scss";
 // @import "pages/gifts.scss";
-@import "pages/rsvp.scss";
+// @import "pages/rsvp.scss";
 
 
 @import "sandbox.scss";

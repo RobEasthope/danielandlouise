@@ -2,11 +2,10 @@
   "name": "danielandlouise",
   "private": true,
   "dependencies": {
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "foundation-sites": "^6.2.3"
   },
-  "overrides": {
-    
-  },
+  "overrides": {},
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
