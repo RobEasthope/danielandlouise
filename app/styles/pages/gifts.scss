@@ -2,7 +2,11 @@
 	background-position: center center;
 	background-attachment: fixed;
 
-	height: 100%;
+	height: calc(100% - 48px);
+
+	@include breakpoint(medium) {
+		height: calc(100% - 44px);
+	}
 
 	// Mobile
 	@include breakpoint(portrait) {
