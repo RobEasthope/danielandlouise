@@ -2,6 +2,8 @@
 	background-position: center center;
 	background-attachment: fixed;
 
+	height: 100%;
+
 	// Mobile
 	@include breakpoint(portrait) {
 		background-image: url('../images/bkg/gifts/Ao_Nang-16-9-P@2x.jpg');
