@@ -89,7 +89,22 @@
 
 			li {
 				display: inline-block;
+				box-sizing: border-box;
+
+				// Create nav grid at small sizes
+				width: 49%;
+
+				// Padding
 				padding: 0 1rem;
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+				@include breakpoint(435px) {
+					width: auto;
+				}
 
 
 				a {
