@@ -70,6 +70,9 @@ gulp.task('html', ['jade', 'styles', 'scripts'], () => {
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
+		.pipe($.if('*.js', $.rev()))
+		.pipe($.if('*.css', $.rev()))
+		.pipe($.revReplace())
     .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
