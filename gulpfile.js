@@ -186,3 +186,21 @@ gulp.task('build', ['jade', 'lint', 'html', 'images', 'fonts', 'extras'], () => 
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
+
+gulp.task('deploy', ['build'], () => {
+  // create a new publisher
+  const publisher = $.awspublish.create({
+    bucket: '...'
+  });
+
+  // define custom headers
+  const headers = {
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+  };
+
+  return gulp.src('dist/**/*.*')
+    .pipe(publisher.publish(headers))
+    .pipe(publisher.sync())
+    .pipe(publisher.cache())
+    .pipe($.awspublish.reporter());
+});
