@@ -13,6 +13,19 @@
 
 		ul {
 			display: inline-block;
+			@include breakpoint(medium) {
+				li a {
+					padding-left: 1.8rem;
+					padding-right: 1.8rem;
+				}
+			}
+
+			@include breakpoint(large) {
+				li a {
+					padding-left: 3rem;
+					padding-right: 3rem;
+				}
+			}
 		}
 	}
 }
