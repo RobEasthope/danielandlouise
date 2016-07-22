@@ -50,22 +50,22 @@
 			line-height: 1;
 			color: $white;
 
-			&:after {
-				width: 40%;
-				height: rem-calc(3);
-				display: block;
-				background: white;
-				margin: rem-calc(10) auto;
-				content: ' ';
-
-				@include breakpoint(medium) {
-					width: 30%;
-				}
-
-				@include breakpoint(large) {
-					width: 15%;
-				}
-			}
+			// &:after {
+			// 	width: 40%;
+			// 	height: rem-calc(3);
+			// 	display: block;
+			// 	background: white;
+			// 	margin: rem-calc(10) auto;
+			// 	content: ' ';
+			//
+			// 	@include breakpoint(medium) {
+			// 		width: 30%;
+			// 	}
+			//
+			// 	@include breakpoint(large) {
+			// 		width: 15%;
+			// 	}
+			// }
 		}
 
 		.subhead {
