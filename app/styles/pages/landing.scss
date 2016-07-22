@@ -2,8 +2,16 @@
 
 .landing {
 	background-position: center top;
-	height: 100vh;
+	text-align: center;
 
+	// Set page height
+	height: calc(100vh - 48px;);
+
+	@include breakpoint(medium) {
+		height: calc(100vh - 44px;);
+	}
+
+	// Background
 	// Mobile
 	@include breakpoint(portrait) {
 		background-image: url('../images/bkg/landing/florence-4-3-P@2x.jpg');
@@ -32,27 +40,15 @@
 		background-image: url('../images/bkg/landing/florence-max.jpg');
 	}
 
-	.text-bkg {
-		background-color: transparent;
-		color: white;
-	}
-}
 
-// *
+	// *
 
-//Landing page
-.landing-wrap {
-	width: 100%;
-	text-align: center;
-	display: table;
-
-	.landing-header {
-		display: table-row;
+	.title {
 		text-transform: uppercase;
 		width: 100%;
 
 		.names {
-			margin-top: 10px;
+			padding-top: 0.5em;
 			margin-bottom: 0;
 			font-weight: 700;
 			line-height: 1;
@@ -63,7 +59,7 @@
 				height: 4px;
 				display: block;
 				background: white;
-				margin: 5px auto;
+				margin: rem-calc(5) auto;
 				content: ' ';
 
 				@include breakpoint(medium) {
@@ -84,32 +80,30 @@
 		}
 	}
 
-	.landing-footer {
-		display: table-cell;
-		vertical-align: bottom;
-		text-transform: uppercase;
-		padding-bottom: 20px;
+	.date {
+		position: absolute;
+		bottom: 1rem;
+
+		// Centre text
+		left: 50%;
+		transform: translateX(-50%);
+
 		color: $white;
+		// text-transform: uppercase;
 
 		sup {
 			text-transform: lowercase;
 		}
 
-		h2 {
-
-			&:after {
-				display: block;
-				width: 75px;
-				height: 0px;
-				margin: 16px auto 16px auto;
-				background: $india-ink;
-				content: ' ';}
+		// Overide default ornamentation
+		&:after {
+			display: none;
 		}
 
-		.footer-heart {
+		.heart {
 			height: 23px;
-			@include breakpoint(medium) { height: 30px}
-			@include breakpoint(large) { height: 40px; }
+			@include breakpoint(medium) { height: rem-calc(30);}
+			@include breakpoint(large) { height: rem-calc(40); }
 		}
 	}
 }
