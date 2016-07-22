@@ -44,28 +44,14 @@
 		width: 100%;
 
 		.names {
-			padding-top: 1em;
+			padding-top: 0.5em;
+			margin-top: 0em;
 			margin-bottom: 0;
 			font-weight: 700;
 			line-height: 1;
 			color: $white;
 
-			// &:after {
-			// 	width: 40%;
-			// 	height: rem-calc(3);
-			// 	display: block;
-			// 	background: white;
-			// 	margin: rem-calc(10) auto;
-			// 	content: ' ';
-			//
-			// 	@include breakpoint(medium) {
-			// 		width: 30%;
-			// 	}
-			//
-			// 	@include breakpoint(large) {
-			// 		width: 15%;
-			// 	}
-			// }
+
 		}
 
 		.subhead {
@@ -73,6 +59,48 @@
 			font-weight: 700;
 			line-height: 1;
 			color: $white;
+		}
+	}
+
+
+	.landing-navigation {
+		// display: none;
+
+		@include breakpoint(medium) {
+			display: block;
+		}
+
+		ul {
+			display: inline-block;
+			padding-top: 0.5em;
+
+			margin-top: 0.5em;
+			margin-bottom: 0;
+			margin-left: 1em;
+			margin-right: 1em;
+
+			@include breakpoint(medium) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+
+			border-top: 2px solid white;
+
+			li {
+				display: inline-block;
+				padding: 0 1rem;
+
+
+				a {
+					color: white;
+					font-size: rem-calc(18);
+
+					&:hover, &:focus {
+						border-bottom: 2px solid white;
+					}
+				}
+			}
 		}
 	}
 
