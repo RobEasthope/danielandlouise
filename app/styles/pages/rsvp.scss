@@ -37,6 +37,10 @@
 		ol {
 			margin-left: 0;
 		}
+
+		input:disabled {
+			background-color: $pomegranate;
+		}
 	}
 
 	.ss-q-title, .ss-secondary-text {font-weight: normal;}
