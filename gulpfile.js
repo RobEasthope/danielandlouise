@@ -190,7 +190,11 @@ gulp.task('default', ['clean'], () => {
 gulp.task('deploy', ['build'], () => {
   // create a new publisher
   const publisher = $.awspublish.create({
-    bucket: '...'
+		region: 'eu-west-1',
+		params: {
+      Bucket: 'louiseanddaniel'
+    },
+		credentials: new AWS.SharedIniFileCredentials({profile: 'rob'})
   });
 
   // define custom headers
