@@ -48,7 +48,7 @@
 		width: 100%;
 
 		.names {
-			padding-top: 0.5em;
+			padding-top: 1em;
 			margin-bottom: 0;
 			font-weight: 700;
 			line-height: 1;
@@ -56,10 +56,10 @@
 
 			&:after {
 				width: 40%;
-				height: 4px;
+				height: rem-calc(3);
 				display: block;
 				background: white;
-				margin: rem-calc(5) auto;
+				margin: rem-calc(10) auto;
 				content: ' ';
 
 				@include breakpoint(medium) {
@@ -89,7 +89,7 @@
 		transform: translateX(-50%);
 
 		color: $white;
-		// text-transform: uppercase;
+		text-transform: uppercase;
 
 		sup {
 			text-transform: lowercase;
