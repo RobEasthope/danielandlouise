@@ -56,6 +56,7 @@
 			margin-bottom: 0;
 			font-weight: 700;
 			line-height: 1;
+			color: $white;
 
 			&:after {
 				width: 40%;
@@ -80,7 +81,7 @@
 			margin: 0;
 			font-weight: 700;
 			line-height: 1;
-
+			color: $white;
 		}
 	}
 
@@ -89,6 +90,7 @@
 		vertical-align: bottom;
 		text-transform: uppercase;
 		padding-bottom: 20px;
+		color: $white;
 
 		sup {
 			text-transform: lowercase;
