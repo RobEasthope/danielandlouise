@@ -1,7 +1,19 @@
-.top-bar {
-	text-align: center;
-
-	ul {
-		display: inline-block;
+// Mobile icon
+.menu-icon {
+	float: right;
+	img {
+		height: 2rem;
 	}
+}
+
+// Large navigation
+.top-bar {
+	@include breakpoint(medium) {
+		text-align: center;
+
+		ul {
+			display: inline-block;
+		}
+	}
+
 }
