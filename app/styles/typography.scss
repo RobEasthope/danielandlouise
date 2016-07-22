@@ -1,0 +1,18 @@
+h1, h2 {text-align: center;}
+
+h2 {
+	margin-top: 2rem;
+
+	&:after {
+		display: block;
+		width: 100px;
+		height: 3px;
+		margin: 1rem auto 2rem auto;
+		background: $india-ink;
+		content: ' ';
+	}
+}
+
+ul {
+	list-style-type: none;
+}
