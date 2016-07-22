@@ -147,7 +147,6 @@
 		}
 
 		.heart {
-			height: rem-calc(20);
 			margin: 0 auto;
 			display: block;
 			@include breakpoint(medium) { display: block; }
@@ -155,9 +154,10 @@
 				display: inline;
 				margin: 0 rem-calc(5);
 			}
-			@include breakpoint(medium) { height: rem-calc(30); }
-			@include breakpoint(large) { height: rem-calc(30); }
 
+			// Sizing
+			height: rem-calc(20);
+			@include breakpoint(medium) { height: rem-calc(25); }
 		}
 
 		.location {
