@@ -80,7 +80,7 @@
 		}
 	}
 
-	.date {
+	.date-wrap {
 		position: absolute;
 		bottom: 1rem;
 
@@ -100,10 +100,30 @@
 			display: none;
 		}
 
+		.date {
+			display: block;
+			margin-bottom: 0;
+			@include breakpoint(medium) { display: block; }
+			@include breakpoint(large) { display: inline }
+		}
+
 		.heart {
-			height: 23px;
-			@include breakpoint(medium) { height: rem-calc(30);}
-			@include breakpoint(large) { height: rem-calc(40); }
+			height: rem-calc(20);
+			margin: 0 auto;
+			display: block;
+			@include breakpoint(medium) { display: block; }
+			@include breakpoint(large) {
+				display: inline;
+				margin: 0 rem-calc(5);
+			}
+			@include breakpoint(medium) { height: rem-calc(30); }
+			@include breakpoint(large) { height: rem-calc(30); }
+
+		}
+
+		.location {
+			display: block;
+			@include breakpoint(large) { display: inline }
 		}
 	}
 }
