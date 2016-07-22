@@ -1,6 +1,0 @@
-[submodule ".themes/danielandlouise"]
-	path = .themes/danielandlouise
-	url = https://github.com/alexgaribay/octoflat
-[submodule ".themes/octoflat"]
-	path = .themes/octoflat
-	url = https://github.com/alexgaribay/octoflat
