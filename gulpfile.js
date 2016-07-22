@@ -5,6 +5,9 @@ const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
 
+// const awspublish = require('gulp-awspublish');
+const AWS = require('aws-sdk');
+
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
