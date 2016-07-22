@@ -19,6 +19,11 @@
 // Components
 @import "browser-upgrade.scss";
 
+// Globals
+@import "structure.scss";
+@import "typography.scss";
+@import "navigation.scss";
+
 // Pages
 @import "pages/landing.scss";
 @import "pages/the-wedding.scss";
