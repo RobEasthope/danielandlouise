@@ -5,11 +5,7 @@
 	text-align: center;
 
 	// Set page height
-	height: calc(100vh - 48px;);
-
-	@include breakpoint(medium) {
-		height: calc(100vh - 44px;);
-	}
+	height: 100vh;
 
 	// Background
 	// Mobile
