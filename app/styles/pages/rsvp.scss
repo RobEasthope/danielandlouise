@@ -1,6 +1,7 @@
 .rsvp {
 	background-position: center top;
-	background-attachment: fixed;
+  background-attachment: fixed;
+  height: 100%;
 
 	// Mobile
 	@include breakpoint(portrait) {
